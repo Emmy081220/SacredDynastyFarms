@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Found - Sacred Dynasty Farms</title>
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+
+</head>
+
+<style>
+    :root {
+        --background: #FFFAF6;
+        --primary: #F97561;
+        --yellow: #FFCA0F;
+        --green: #41766C;
+        --subtxt: #817d7d;
+    }
+
+    body {
+        font-family: poppins, sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--background);
+        text-align: center;
+    }
+    
+    .header {
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: clamp(5rem, 15vw,10rem);
+        color: var(--primary);
+        margin: 0;
+    }
+
+    .desc {
+        width: 650px;
+        color: var(--subtxt);
+        margin: auto auto 30px auto;
+    }
+
+    .content-btn {
+        display: block;
+        width: 200px;
+        background-color: var(--primary);
+        margin: auto;
+        text-decoration: none;
+        color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        transition: .4s ;
+    }
+
+    .content-btn:hover {
+        background-color: var(--green);
+    }
+
+    @media screen and (max-width: 768px) {
+        .content-container {
+            padding: 30px;
+        }
+
+        .desc {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="header-logo">
+                <img src="icons/logo.svg" alt="" class="logo-img">
+            </a>
+        </div>
+
+        <div class="content-container">
+            <h1 class="title">404</h1>
+            <h2 class="subtitle">Oops! Page not found</h2>
+            <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex vero dolor voluptates tempora atque cupiditate illo autem voluptatibus quia architecto.</p>
+
+            <a href="index.html" class="content-btn">Back to homepage</a>
+        </div>
+    </div>
+</body>
+</html>

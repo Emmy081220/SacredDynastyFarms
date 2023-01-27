@@ -1,0 +1,258 @@
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+:root {
+    --background: #FFFAF6;
+    --primary: #F97561;
+    --yellow: #FFCA0F;
+    --green: #41766C;
+    --subtxt: #817d7d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background:var(--green);
+    /* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:grey;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f2f2f2;
+}
+
+
+/* 
+    ------------------------------
+    ----- NAVIGATION BAR STYLING ----
+    ------------------------------
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.logo, .nav-list, .cta-list {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 45px;
+}
+
+.logo {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-list {
+    gap: 0 55px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.cta-list {
+    gap: 0 40px;
+}
+
+.secondary {
+    color: #000;
+}
+
+.primary {
+    padding: 17px 25px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.line {
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+
+/* 
+    ------------------------------
+    ----- HERO SECTION STYLING ----
+    ------------------------------
+*/
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-title {
+    margin-bottom: 50px;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.hero-img {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* 
+    ------------------------------
+    ----- ABOUT SECTION STYLING ----
+    ------------------------------
+*/
+.about-story-container {
+    background-color: var(--background);
+    padding: 60px 50px;
+    margin-bottom: 50px;
+}
+
+.story-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.story-desc-container, .story-img-container {
+    width: 50%;
+}
+
+.story-img {
+    width: 100%;
+}
+
+.story-title {
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+}
+
+.story-desc {
+    color: var(--subtxt);
+}
+
+.flipped {
+    flex-direction: row-reverse;
+}
+
+
+/* 
+    ------------------------------
+    ----- VALUE SECTION STYLING ----
+    ------------------------------
+*/
+.value-container {
+    padding: 50px;
+    margin-bottom: 60px;
+}
+
+.value-header {
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.value-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    place-items: center;
+    gap: 50px;
+}
+
+.value-title {
+    margin-bottom: 20px;
+}
+
+.value-desc {
+    color: var(--subtxt);
+}
+
+
+/* 
+    ------------------------------
+    ----- FOLLOW SECTION STYLING ----
+    ------------------------------
+*/
+.follow-container {
+    min-height: 100vh;
+    margin-bottom: 50px;
+    background: #FBFBFB;
+    padding: 50px;
+}
+
+.follow-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.follow-header h1 a {
+    color: var(--primary) !important;
+    text-decoration: underline !important;
+}
+
+.follow-list-img {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.follow-list-img img {
+    width: 100%;
+    transition: .4s;
+}
+
+.follow-list-img img:hover {
+    transform: scale(.98);
+}
+

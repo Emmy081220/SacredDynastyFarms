@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="38.5px" height="38.5px" viewBox="0 0 38.5 38.5" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L38.5 0L38.5 38.5L0 38.5L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="bx-envelope">
+    <path d="M0 0L38.5 0L38.5 38.5L0 38.5L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M32.083 6.41666L6.41634 6.41666C4.64694 6.41666 3.20801 7.85559 3.20801 9.62499L3.20801 28.875C3.20801 30.6444 4.64695 32.0833 6.41634 32.0833L32.083 32.0833C33.8524 32.0833 35.2913 30.6444 35.2913 28.875L35.2913 9.62499C35.2913 7.85559 33.8524 6.41666 32.083 6.41666L32.083 6.41666ZM32.0827 9.625L32.0827 10.4447L19.2493 20.4275L6.41602 10.4463L6.41602 9.625L32.0827 9.625L32.0827 9.625ZM6.41602 28.875L6.41602 14.5081L18.2644 23.724C18.8425 24.1781 19.6562 24.1781 20.2343 23.724L32.0827 14.5081L32.0859 28.875L6.41602 28.875L6.41602 28.875Z" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

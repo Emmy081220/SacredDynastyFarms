@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Overview - Sacred Dynasty Farms.</title>
+
+    <link rel="shortcut icon" href="../icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <meta name="theme-color" content="#000">
+    <script src="../js/hamburger.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<style>
+    
+    .tablinks {
+        width: 300px !important;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" style="color: blue;" class="logo">
+                    < Back to shop
+                </a>
+            </div>  
+
+            <a href="#" class="cart-btn">Cart()</a>
+        </nav>
+    </header>
+    
+    <main style="padding-bottom: 50px;">
+        <section class="product-desc-contianer">
+            <div class="product-img-container">
+                <img src="../images/item-3.jpg" alt="">
+            </div>
+            
+            <div class="product-desc-content">
+                <h1>Small duck pet toy</h1>
+                <h2 style="font-size: 30px;" class="price-tag">&#8358;20,000 NGN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+
+                <div class="quantity-container">
+                    <div class="quantity-input-container">
+                        <h3 class="quantity-title">Quantity</h3>
+                        <input type="number" value="1" name="" id="">
+                    </div>
+
+                    <div class="quantity-input-container c-2">
+                        <h3 class="quantity-title">Select</h3>
+                        <select name="" id="">
+                            <option value="">--Choose Color--</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="orange">Orange</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button>Add to cart</button>
+            </div>
+        </section>
+
+        <div class="overview-desc-container">
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'London')">Product description</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Additional info</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Shiping</button>
+            </div>
+              
+            <div class="tab-content-container">
+                <div id="London" class="tabcontent">
+                    <div class="first-desc">
+                        <h1>About the product</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper nulla elementum, lobortis feugiat cras rhoncus, sem est molestie. Quam nisi, purus adipiscing dictumst fringilla. Lorem iaculis imperdiet nisi auctor. Sagittis quis curabitur morbi tincidunt. Scelerisque nisi, odio. Bibendum fringilla interdum placerat elit consectetur arcu. Auctor nisi.
+                        </p>
+                    </div>
+                    
+                    <div class="second-desc">
+                        <h2>Quality & Materials</h2>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                  
+                <div id="Paris" class="tabcontent">
+                    <div class="first-desc">
+                        <h1>Additional Info</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper nulla elementum, lobortis feugiat cras rhoncus, sem est molestie. Quam nisi, purus adipiscing dictumst fringilla. Lorem iaculis imperdiet nisi auctor. Sagittis quis curabitur morbi tincidunt. Scelerisque nisi, odio. Bibendum fringilla interdum placerat elit consectetur arcu. Auctor nisi.
+                        </p>
+                    </div>
+                    
+                    <div class="second-desc">
+                        <h2>Quality & Materials</h2>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                    <div class="first-desc">
+                        <h1>Shipping</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper nulla elementum, lobortis feugiat cras rhoncus, sem est molestie. Quam nisi, purus adipiscing dictumst fringilla. Lorem iaculis imperdiet nisi auctor. Sagittis quis curabitur morbi tincidunt. Scelerisque nisi, odio. Bibendum fringilla interdum placerat elit consectetur arcu. Auctor nisi.
+                        </p>
+                    </div>
+                    
+                                       
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

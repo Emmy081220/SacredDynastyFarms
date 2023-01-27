@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L60 0L60 60L0 60L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="bxs-chevron-up-Copy" transform="matrix(4.371139E-08 -1 -1 -4.371139E-08 60 60)">
+    <path d="M0 0L60 0L60 60L0 60L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M30 17.1975L12.3475 34.8475L17.6525 40.1525L30 27.8025L42.3475 40.1525L47.6525 34.8475L30 17.1975Z" id="Shape" fill="#D4CCCC" stroke="none" />
+    </g>
+  </g>
+</svg>
